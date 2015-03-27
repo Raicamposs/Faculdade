@@ -22,7 +22,7 @@ public class TelaCadastro {
         int nmx = 0;
         boolean sair = true, sair2 = true;
         String opcao2;
-        novoAluno[4] = new Alunos(4, "Raiane", "332423423");
+      
         do {
             System.out.println("\nO que deseja fazer?"
                     + "\n1 - Registrar aluno"
