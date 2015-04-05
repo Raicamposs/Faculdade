@@ -1,4 +1,7 @@
 package Shape;
+
+import Circle.Circle;
+
 /*
  * ClassName Main 
  * Version information 1.0 

@@ -1,5 +1,6 @@
 
 package BookVersion2;
+import Book.Author;
 
 /*
 * ClassName TestAutor 

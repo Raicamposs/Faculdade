@@ -1,4 +1,5 @@
 package BookVersion2;
+import Book.Author;
 
 public class TestBook {
 
@@ -19,10 +20,10 @@ public class TestBook {
         osIncriveis[3] = new Author("Harper Lee", "harper@example.com", 'M');
 
         //Criando os objetos Book.
-        Book book[] = new Book[10];
-        book[0] = new Book("Orgulho e Preconceito", 33.90, orgulhoPreconceito);
-        book[1] = new Book("O Morro dos Ventos Uivantes", 17.80, morroDosVentosUivantes);
-        book[4] = new Book("Os Incriveis", 40.0, 2, osIncriveis);
+        BookTwo book[] = new BookTwo[10];
+        book[0] = new BookTwo("Orgulho e Preconceito", 33.90, orgulhoPreconceito);
+        book[1] = new BookTwo("O Morro dos Ventos Uivantes", 17.80, morroDosVentosUivantes);
+        book[4] = new BookTwo("Os Incriveis", 40.0, 2, osIncriveis);
 
         //Alterando preço e quantidade em estoque dos objeto Book.
         book[0].setPrice(38);

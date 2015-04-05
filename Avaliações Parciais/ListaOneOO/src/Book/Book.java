@@ -6,16 +6,13 @@ public class Book {
      * Método construtor. Você deve utiliza-lo para criar o registro de um novo
      * book .
      *
-     * @param price preço do book
-     * @param name nome do book
-     * @param author um objeto autor cadastrado
-     * @param qtyInStock quantidade em estoque do book
      * @author Raiane Campos
      */
-    private final String name;
-    private double price;
-    private int qtyInStock = 0;
-    private final Author author;
+    protected String name;
+    protected double price;
+    protected int qtyInStock = 0;
+    private Author author;
+    protected Author vetAuthor[];
 
     // Declaração do construtor da classe Book 
     public Book(String name, Double price, Author autor) {
@@ -34,7 +31,24 @@ public class Book {
         this.author = author;
     }
 
-    //Declaração do método setName
+    // declaração do construtor da classe Book usando um vetor
+    protected Book(String name, double price, Author author[]) {
+
+        this.name = name;
+        this.price = price;
+        this.vetAuthor = author;
+    }
+
+    // declaração de outro construtor da classe Book usando um vetor
+    protected Book(String name, double price, int qtyInStock, Author author[]) {
+
+        this.name = name;
+        this.price = price;
+        this.qtyInStock = qtyInStock;
+        this.vetAuthor = author;
+    }
+
+    //Declaração do método getName
     public String getName() {
         return this.name;
         //retorna o nome do book
@@ -69,8 +83,8 @@ public class Book {
         return author.getName();
         //retorna o nome do author do book
     }
-    
-     //Declaração do método getAuthor
+
+    //Declaração do método getAuthor
     public Author getAuthor() {
         return author;
         //retorna o  author do book
