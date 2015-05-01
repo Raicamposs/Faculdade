@@ -154,44 +154,14 @@ public class ListFive {
          *
          */
         Scanner entrada = new Scanner(System.in);
-        float valor;
-        float total0;
-        float total1;
-        float total2;
-        float total3;
-        float total4;
-        float total5;
-        float total6;
-        float total7;
-        float total8;
-        float total9;
-        float total10;
-
+      float total[]=new float[11];
         System.out.println("Insira um numero");
-        valor = entrada.nextFloat();
-        total0 = valor * 0;
-        total1 = valor * 1;
-        total2 = valor * 2;
-        total3 = valor * 3;
-        total4 = valor * 4;
-        total5 = valor * 5;
-        total6 = valor * 6;
-        total7 = valor * 7;
-        total8 = valor * 8;
-        total9 = valor * 9;
-        total10 = valor * 10;
-
-        System.out.println("O resultado da equação é: " + valor + " x 0 = " + total0);
-        System.out.println("O resultado da equação é: " + valor + " x 1 = " + total1);
-        System.out.println("O resultado da equação é: " + valor + " x 2 = " + total2);
-        System.out.println("O resultado da equação é: " + valor + " x 3 = " + total3);
-        System.out.println("O resultado da equação é: " + valor + " x 4 = " + total4);
-        System.out.println("O resultado da equação é: " + valor + " x 5 = " + total5);
-        System.out.println("O resultado da equação é: " + valor + " x 6 = " + total6);
-        System.out.println("O resultado da equação é: " + valor + " x 7 = " + total7);
-        System.out.println("O resultado da equação é: " + valor + " x 8 = " + total8);
-        System.out.println("O resultado da equação é: " + valor + " x 9 = " + total9);
-        System.out.println("O resultado da equação é: " + valor + " x 10 = " + total10);
+        float valor = entrada.nextFloat();
+        for (int i = 0; i < total.length; i++) {
+            total[i] = valor * i;
+            System.out.println("O resultado da equação é: " + valor + " x " + i + " = " + total[i]);
+        
+        }
     }
 
     public void exercicio6() {

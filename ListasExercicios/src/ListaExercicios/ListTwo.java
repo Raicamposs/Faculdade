@@ -34,44 +34,16 @@ public class ListTwo {
 
     public void exercicio3() {
 
-        double n1, n2, n3, n4, n5, n6, n7, n8, n9, n10;
+        double n;
         double maior = 0, menor = 100;
         double[] vet = new double[10];
 
         Scanner s = new Scanner(System.in);
-
-        System.out.println("insira um nota:");
-        n1 = s.nextDouble();
-        System.out.println("insira um nota:");
-        n2 = s.nextDouble();
-        System.out.println("insira um nota:");
-        n3 = s.nextDouble();
-        System.out.println("insira um nota:");
-        n4 = s.nextDouble();
-        System.out.println("insira um nota:");
-        n5 = s.nextDouble();
-        System.out.println("insira um nota:");
-        n6 = s.nextDouble();
-        System.out.println("insira um nota:");
-        n7 = s.nextDouble();
-        System.out.println("insira um nota:");
-        n8 = s.nextDouble();
-        System.out.println("insira um nota:");
-        n9 = s.nextDouble();
-        System.out.println("insira um nota:");
-        n10 = s.nextDouble();
-
-        vet[0] = n1;
-        vet[1] = n2;
-        vet[2] = n3;
-        vet[3] = n4;
-        vet[4] = n5;
-        vet[5] = n6;
-        vet[6] = n7;
-        vet[7] = n8;
-        vet[8] = n9;
-        vet[9] = n10;
-
+        for (int i = 0; i < 10; i++) {
+            System.out.println("insira um nota:");
+            n = s.nextDouble();
+            vet[i] = n;
+        }
         System.out.println("Os resultados sao:");
 
         for (int i = 0; i < 10; i++) {
